@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<!--
+<Island at night v="0.1.180604.1644"
+Contributors="John, Richie"/>
+-->
+
+<html>
+    <head>
+        <title>Island at night</title>
+        <meta charset="utf-8">
+        <meta name="Island at night" content="Island at night"> 
+		<script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+		<script src="https://sdk.altvr.com/libs/altspace.js/2.9.0/altspace.min.js"></script>
+	</head>
+	<body>
+		<a-scene sync-system="app: Island at night; author: John, Richie" altspace="fullspace: true; usePixelScale: false">
+			<a-assets>
+				<img id="sky" src="NightSky.jpg"/>
+				<a-asset-item id="island" src="island.dae"></a-asset-item>
+			</a-assets>
+			<a-sky src="#sky" radius="2100" position="0 0 0" rotation="0 90 0"></a-sky>
+			<a-collada-model src="#island" rotation="0 45 0" material="transparent: true" collada-model="" position="" scale="" visible=""></a-collada-model>
+		</a-scene>
+    </body>
+</html>
